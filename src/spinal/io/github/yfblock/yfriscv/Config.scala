@@ -5,9 +5,9 @@ import spinal.core.sim._
 
 object Config {
   def spinal = SpinalConfig(
-    targetDirectory = "src/gen",
+    targetDirectory = "src/verilog",
     defaultConfigForClockDomains = ClockDomainConfig(
-      resetActiveLevel = HIGH
+      resetActiveLevel = LOW
     ),
     defaultClockDomainFrequency = FixedFrequency(27 MHz),
     onlyStdLogicVectorAtTopLevelIo = true
